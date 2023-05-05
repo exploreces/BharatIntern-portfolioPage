@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.145.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.clouds.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.145.0/three.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.clouds.min.js">
+    
+
+
+  
+  <link rel="stylesheet" href="Skills_style.css">
+  <link rel="stylesheet" href="contact_style.css">
+  <link rel = "stylesheet" href = "card_style.css">
+  
+    <title>Document</title>
+    <style>
+
+
+    /* hero background image */
+
+.bgimage {
+    height:100vh;
+    background: url('life_status.jpg');
+    /*background: url('https://www.wallpaperflare.com/static/842/564/890/night-city-5-centimeters-per-second-anime-wallpaper.jpg');*/
+    background-size:cover;
+    position:relative;
+}
+
+
+/* text css above hero image*/
+
+
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    font-weight:200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+/* about section image css */
+
+
+.imageAboutPage {
+    width: 100%;
+}
+
+#fontt, .navbar-brand{
+    color: azure;
+    font-weight: 100;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card{
+    clear:none;
+    float:right;
+    margin:25px;
+    padding:20px;
+    border :2px solid black;
+    position:relative;
+  }
+
+ #space{
+    margin:25px;
+    padding:20px;
+
+ }
+
+ .space{
+    padding:100px;
+    margin:10px;
+ }
+
+ #move_right{
+    Padding:10px;
+    margin:2px;
+    float:left;
+    left:0%
+ }
+
+ .card:hover{
+  background-color:lightcyan;
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+  --s: 250px;   /* the size of the image */
+  --b: 8px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: pink} 
+  
+ 
+
+
+</style>
+</head>
+<body>
+
+    
+    
+<div>
+
+
+<nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <div class="container">
+        <a class="navbar-brand" href="#">Ayushi </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link " id = "fontt" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id = "fontt" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id = "fontt" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id = "fontt" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id = "fontt" href="#contact">Contact</a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+
+
+ <!-- main banner -->
+
+ <section class="bgimage" id="home">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">Hi, it's me Ayushi</h2>
+            <p class="hero_desc"><b>I am a Computer Science Student</b></p>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- about section 1 - "About Me"-->
+
+
+<section id="about">
+    <div class="container mt-4 pt-4">
+        <h1 class="text-center">About Me</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <img src="dp_pic_edited.jpg" class= "imageAboutPage" alt="Ayushi Sarkar">
+            </div>
+
+            <div class="col-lg-8">
+                <p>I am a<b> Student</b> in Computer Science, passionate about technology and innovations 
+                    . I am exploring different languages such as java, C, Html,Css etc... eager to build a strong foundation in programming 
+                languages and software development methodologies. I am always seeking new Challenges and oppurtunities to apply my skills and knowledge to real-world problems.
+                I am able to work well both in a team environment as well as using own initiative.
+            Overall i am motivated and enthuasiastic individual with a strong work ethic and a commitment to excellence.
+        </p>
+                    
+                
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Name: Ayushi sarkar</li>
+                            <li>Age: 18</li>
+                            <li>Occupation: Student (b.tech) </li>
+
+                        </ul>
+                    </div>
+                   
+                </div>
+                <div class="row mt-3">
+                    <h5>Personal information</h5>
+                    <p>Speaking about my personal Interests, I have a Interest in nature photography. I love to travel and explore new places. Love to watch family genre movies , one of which is"Anand", "3-idiots" etc.. 
+                         With all these I love developing new ideas and designs in my field, learn and explore 
+                         new things in my life. </p>
+                    
+                </div>
+                <section>
+
+                <div class="row mt-3">
+                    <div class="col-md-6" id = "move_right">
+                        <h3>Workshops/Seminars(attended)</h3>
+                        <ul>
+                            <li>Frontend development by simplilearn</li>
+                            <li>Web Design conducted by coincient</li>
+
+                        </ul>
+                    </div>
+            </div>
+        </section>
+        </div>
+</section>
+<pre>
+
+    <hr>
+</pre>
+
+
+<!-- Skills cards used -->
+
+
+<!--<div id = "skills">
+    <h2><center> Skills </center></h2>
+
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="code_logo.png" alt="Java" style="width:100%">
+            <div class="container">
+              <h2>Java</h2>
+              <p class="title">Backend language, Programming</p>
+              <p>Aquiring skills in Java, solved many coding problems, related to arrays 
+                , String.. well known to collection framework of java.Well skilled with use of its libraries 
+                and its Jdk,Jre environment.
+                Currently learning OOPs concept in depth. 
+                
+              </p>
+              
+             
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="code_logo.png" alt="Web Development" style="width:100%">
+            <div class="container">
+              <h2>Web Development</h2>
+              <p class="title">Frontend</p>
+              <p>Skilled in Html,Css and Jquery, well known with Bootstrap. Worked on projects and still working on various 
+                web based projects. working towards making pages more responsive and user friendly.
+                Would aquire more skills in React and node.js .
+              </p>
+              
+             
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="code_logo.png" alt="C language" style="width:100%">
+            <div class="container">
+              <h2>C language</h2>
+              <p class="title">Programming</p>
+              <p>Learnedall the basics and syntax of the language. solved questions with C. 
+                I'm progressing towards learning it completely with all the efficient use of pointers and its applications.
+                it helps to solve the basic problems.
+              </p>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+</div>-->
+<h2> <center><b> Skills</b></center> </h2>
+
+<!-- Card of skills -->
+
+
+
+<div class="container" id ="skills" style="background-color: black">
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>Java</h2>
+        <p>Aquiring skills in Java, solved many coding problems, related to arrays 
+          , String.. well known to collection framework of java.Well skilled with use of its libraries 
+          and its Jdk,Jre environment.
+          Currently learning OOPs concept in depth. </p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>WEb-Design</h2>
+        <p>Skilled in Html,Css and Jquery, well known with Bootstrap. Worked on projects and still working on various 
+          web based projects. working towards making pages more responsive and user friendly.
+          Would aquire more skills in React and node.js .</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>C Programming</h2>
+        <p>Learned all the basics and syntax of the language. solved questions with C. 
+          I'm progressing towards learning it completely with all the efficient use of pointers and its applications.
+          it helps to solve the basic problems.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+    
+
+<pre>
+    <hr>
+</pre>
+
+<!--<scetion id = "education">
+    <div  class = container>
+
+        <h2> <center> Education Qualifications</center></h2>
+
+        <div class="progress">
+            <div class="progress-bar bg-success" style="width:45%">
+            <b>  class 10 : 92%</b>
+            </div>
+            <div class="progress-bar bg-info" style="width:30%">
+               <b> class 11 : 92%</b>
+            </div>
+            <div class="progress-bar " style="width:20%">
+              <b> B.tech : 9 Cgpa</b>
+            </div>
+          </div>
+<br>
+            <h5>class 10 :</h5><br>
+            <p> I passed from xyz convent school, from cbse board balasore, and Scored 92%.</p><br>
+
+            <h5>class 12:</h5><br>
+            <p> I passed from xyz convent school, from cbse board balasore, and Scored 92%.</p>
+
+            <h5>B.tech :</h5><br>
+            <p> I am currently doing B.tech in cse core from ITER,SOAU. Till now my cgpa is 9 cgpa.<sup>+</sup></p><br>
+          
+
+
+          
+          </div>
+          </section> -->
+
+
+        <!-- education cards used -->
+
+
+<div id = "education">
+    <h2><center> Education </center></h2>
+
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="code_logo.png" alt="Class 10" style="width:100%">
+            <div class="container">
+              <h2>Class 10</h2><br>
+              
+              <p> I completed my 10 from xyz convent school at Balasore.Passed with 96%.   
+                
+              </p>
+              
+             
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="code_logo.png" alt="Class 12" style="width:100%">
+            <div class="container">
+              <h2>Class 12</h2>
+             
+              <p> I have completed 12 class from Guidence xyz school BBSR, (cbse) board. Have taken PCM , obtained 91%.
+              </p>
+              
+             
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="code_logo.png" alt="B.tech" style="width:100%">
+            <div class="container">
+              <h2>B.tech</h2>
+              
+              <p> I am currently studying CSE in ITER,SOAU.Presently I am in 2nd Year,still scored 9<sup>+</sup>Cgpa.
+                 learning programming languages.
+                <br> 
+              </p>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+          
+          <pre>
+
+    
+          </pre>
+<hr>
+
+ <!-- contact section start -->
+
+ 
+ <section class="contact" id="contact">
+         
+    <div class="max-width">
+        <h2 class="title"><Center><b>Contact me</b></Center> </h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text"></div>
+                <p>I would love to hear your feedback about the page! Contact me to get my CV and we can work together in several tech projects.</p>
+               <br>
+                   <p> Fill in your info in the form here and I look forward to hearing from you!"</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Ayushi Sarkar</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Jagamara,Bhubaneswar,Odisha,India</div>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <div class="info">
+                            <ul class="social">
+                                <li class="pad">
+                                  <a href="#" target="_blank">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fa-brands fa-twitter"></span>
+                                </a>
+                                </li>
+                                <li class="pad">
+                                  <a href="https://github.com/exploreces" target="_blank">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fa-brands fa-github"></span>
+                                </a>
+                                </li>
+                                <li class="pad">
+                                  <a href="https://www.linkedin.com/in/ayushi-s-384b50226/" target="_blank">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fa-brands fa-linkedin-in"></span>
+                                </a>
+                                </li>
+                                <li class="pad">
+                                  <a href="https://www.instagram.com/" target="_blank">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fa-brands fa-instagram"></span>
+                                </a>
+                                </li>
+                                
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message me</div>
+                <form action="https://formsubmit.co/ayushidssarkar@gmail.com" method="POST">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Name" required="">
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject" required="">
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Message.." required=""></textarea>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <span>Created By <a>Ayushi Sarkar</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+</footer>
+<script src="port.js"></script>
+
+
+<style type="text/css" data-typed-js-css="true">
+    .typed-cursor{
+      opacity: 1;
+    }
+    .typed-cursor.typed-cursor--blink{
+      animation: typedjsBlink 0.7s infinite;
+      -webkit-animation: typedjsBlink 0.7s infinite;
+              animation: typedjsBlink 0.7s infinite;
+    }
+    @keyframes typedjsBlink{
+      50% { opacity: 0.0; }
+    }
+    @-webkit-keyframes typedjsBlink{
+      0% { opacity: 1; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1; }
+    }
+  </style>
+  <pre>
+
+
+    <hr>
+  </pre>
+  </body>
+  
+  </html>
